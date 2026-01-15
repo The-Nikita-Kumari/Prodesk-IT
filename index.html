@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodesk IT - Digital Marketing Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@600;700;800&family=DM+Serif+Display&family=Space+Grotesk:wght@700&family=Raleway:wght@700;800&family=Cardo:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="Logo.png" alt="Prodesk IT Logo" class="logo-icon">
+            <span class="logo-text">Prodesk IT</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
+            <svg class="toggle-icon sun-icon" viewBox="0 0 24 24" width="24" height="24" fill="#FFD700" stroke="#FFD700" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="toggle-icon moon-icon" viewBox="0 0 24 24" width="24" height="24" fill="white" style="display: none;">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Turning Ideas Into Impactful Digital Products</h1>
+        <p>Elevate your brand with cutting-edge digital marketing solutions</p>
+        <button class="cta-button">Get Started</button>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>About Prodesk IT</h2>
+        <p>
+            Prodesk IT is a premier digital marketing agency dedicated to transforming ideas into impactful digital experiences. Founded with a passion for innovation and excellence, we help startups and established businesses establish a powerful online presence and achieve sustainable growth.
+        </p>
+        <div class="about-content">
+            <div class="about-item">
+                <h3>What We Do</h3>
+                <p>We are a full-service digital agency specializing in end-to-end solutions that bridge the gap between your vision and digital reality. Our team of experts works collaboratively with clients to design, develop, and deploy cutting-edge digital solutions tailored to their unique business needs.</p>
+            </div>
+            <div class="about-item">
+                <h3>Our Expertise</h3>
+                <p>With years of combined experience in web development, SEO optimization, and digital marketing, we understand the complexities of the digital landscape. We stay ahead of industry trends and leverage the latest technologies to ensure your business remains competitive and visible in an ever-evolving online ecosystem.</p>
+            </div>
+            <div class="about-item">
+                <h3>Our Commitment</h3>
+                <p>We are committed to delivering measurable results and fostering long-term partnerships with our clients. Every project is approached with strategic thinking, creative excellence, and a results-driven mindset. Your success is our success, and we take pride in being an extension of your team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card service-card-seo">
+                <h3>SEO Optimization</h3>
+                <p>Boost your online visibility with our expert SEO strategies designed to rank higher and drive organic traffic.</p>
+            </div>
+            <div class="service-card service-card-wd">
+                <h3>Web Development</h3>
+                <p>Custom-built websites that are fast, responsive, and optimized for conversions and user experience.</p>
+            </div>
+            <div class="service-card service-card-dm">
+                <h3>Digital Marketing</h3>
+                <p>Strategic campaigns across social media, email, and paid ads to grow your audience and increase sales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-details">
+            <h2>Contact Us</h2>
+            <p>Email: contact@prodeskit.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Location: Bengaluru, India</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <p>&copy; 2024 Prodesk IT. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon-fb"></a>
+                <a href="#" class="social-icon-in"></a>
+                <a href="#" class="social-icon-x"></a>
+                <a href="#" class="social-icon-ig"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
+
+        // Load dark mode preference from localStorage
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'flex';
+        }
+
+        // Dark mode toggle
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'flex';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                sunIcon.style.display = 'flex';
+                moonIcon.style.display = 'none';
+            }
+        });
+
+        // Hamburger menu toggle
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
