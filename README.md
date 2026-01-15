@@ -35,19 +35,22 @@ https://prodesk-it-theta.vercel.app/
 ## Screenshots
 
 ### 1. Landing Page – Hero Section
-![Hero Section](Screenshot\HeroSection.png)
+![Hero Section](Screenshot/HeroSection.png)
 
 ### 2. Navigation Bar On Mobile
-![Navbar](Screenshot\HomePage.png)
+![Navbar](Screenshot/HomePage.png)
 
-### 3. Services Section (Grid Layout)
-![Services Section](Screenshot\Services.png)
+### 3. About Section
+![About](Screenshot/About.png)
 
-### 4. Responsive View (Mobile)
-![Mobile View](Screenshot\MobileView.png)
+### 4. Services Section (Grid Layout)
+![Services Section](Screenshot/Services.png)
 
-### 5. Dark Mode (On Mobile)
-![Dark Mode (Mobile View)](Screenshot\DarkMode.png)
+### 5. Responsive View (Mobile)
+![Mobile View](Screenshot/MobileView.png)
 
-### 6. Dark Mode (On Laptop)
-![Dark Mode (Laptop View)](Screenshot\DarkMode(Laptop).png)
+### 6. Dark Mode (On Mobile)
+![Dark Mode (Mobile View)](Screenshot/DarkMode.png)
+
+### 7. Dark Mode (On Laptop)
+![Dark Mode (Laptop View)](Screenshot/DarkMode-Laptop.png)
