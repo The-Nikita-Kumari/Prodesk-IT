@@ -46,5 +46,8 @@ https://prodesk-it-theta.vercel.app/
 ### 4. Responsive View (Mobile)
 ![Mobile View](Screenshot\MobileView.png)
 
-### 5. Dark Mode
-![Dark Mode](Screenshot\DarkMode.png)
+### 5. Dark Mode (On Mobile)
+![Dark Mode (Mobile View)](Screenshot\DarkMode.png)
+
+### 6. Dark Mode (On Laptop)
+![Dark Mode (Laptop View)](Screenshot\DarkMode(Laptop).png)
